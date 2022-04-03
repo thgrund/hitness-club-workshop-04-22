@@ -30,22 +30,22 @@
 -- 1.4 Pattern und Time
 
 -- 2. Quellen von Sounds
--- ## Synthesizers
--- ## Samples
--- ## Midi
--- ## Effekte (lokal und global)
+-- 2.1 Synthesizers
+-- 2.2 Samples
+-- 2.3 Midi
+-- 2.4 Effekte (lokal und global)
 
 -- 3 Patterns
--- ## concatenation (naive)
--- ## speed up, speed down:
--- ## combine two patterns
--- ## functions that produce and modify patterns: run, slow, rev
--- ## parallel composition: stack, ","
--- ## cat and speed-up: fastcat "[ .. ]"
--- ## time-shift  ~>
--- ## Mini Notation
--- ## Euklid, Polymetrik und Polyryhtmik
+-- 3.1 concatenation (naive)
+-- 3.2 speed up, speed down:
+-- 3.3 combine two patterns
+-- 3.4 functions that produce and modify patterns: run, slow, rev
+-- 3.5 parallel composition: stack, ","
+-- 3.6 cat and speed-up: fastcat "[ .. ]"
+-- 3.7 time-shift  ~>
+-- 3.8  Mini Notation
 -- https://tidalcycles.org/docs/patternlib/tutorials/mini_notation/
+-- 3.9 Euklid, Polymetrik und Polyryhtmik
 
 -- # Referenzen:
 -- * https://tidalcycles.org/docs/
