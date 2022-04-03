@@ -19,6 +19,7 @@
 -- https://github.com/musikinformatik/SuperDirt
 
 -- Ist eingebettet in der Sprache Haskell https://www.haskell.org/
+-- Es gibt neuerdings andere Ansätze wie Strudel https://strudel.tidalcycles.org/tutorial/
 
 -- 1.3 Warum Haskell und wie profitiert TidalCycles davon?
 --  - Statisches Typ-System
