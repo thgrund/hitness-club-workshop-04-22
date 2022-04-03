@@ -31,11 +31,10 @@ Ist eingebettet in der Sprache Haskell https://www.haskell.org/
 
 -- ## Effekte
 
-# patterns
+-- 3 Patterns
 ## concatenation (naive)
 ## speed up, speed down:
 ## combine two patterns
-## insertion: some haskell magic
 ## functions that produce and modify patterns: run, slow, rev
 ## parallel composition: stack, ","
 ## cat and speed-up: fastcat "[ .. ]"
