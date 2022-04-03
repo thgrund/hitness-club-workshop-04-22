@@ -24,30 +24,22 @@ is embedded in the Haskell language https://www.haskell.org/
 
 ## Pattern and Time
 
-# sources of sound
+# Quellen von Sounds
 
-## synthesizers
+## Synthesizers
 
-## samples
+## Samples
 
 ## Effekte
 
 # patterns
-
 ## concatenation (naive)
-
 ## speed up, speed down:
-
 ## combine two patterns
-
 ## insertion: some haskell magic
-
 ## functions that produce and modify patterns: run, slow, rev
-
 ## parallel composition: stack, ","
-
 ## cat and speed-up: fastcat "[ .. ]"
-
 ## time-shift  ~>
 
 # Nearly all above
