@@ -1,25 +1,25 @@
 -- Intro
 
-Tidal https://tidalcycles.org/ Patterns mit Code.
+-- Tidal https://tidalcycles.org/ Patterns mit Code.
 
-Sprache zur Beschreibung von Sequenzen
-(Bspw. polyphon, polyrhythmisch, generativ -> hä?! genau :-D).
+-- Sprache zur Beschreibung von Sequenzen
+-- (Bspw. polyphon, polyrhythmisch, generativ -> hä?! genau :-D).
 
-Umfassende Bibliothek ... zum Transformieren und Kombinieren der Sequenzen.
+-- Umfassende Bibliothek ... zum Transformieren und Kombinieren der Sequenzen.
 
-Erzeugt schnell komplexe Patterns mit einfachen Zutaten
+-- Erzeugt schnell komplexe Patterns mit einfachen Zutaten
 
-Kann keine Töne von sich aus erzeugen, verwendet:
-https://supercollider.github.io/
-https://github.com/musikinformatik/SuperDirt
+-- Kann keine Töne von sich aus erzeugen, verwendet:
+-- https://supercollider.github.io/
+-- https://github.com/musikinformatik/SuperDirt
 
-Ist eingebettet in der Sprache Haskell https://www.haskell.org/
+-- Ist eingebettet in der Sprache Haskell https://www.haskell.org/
 
 -- 1.1 Warum Haskell und wie profitiert TidalCycles davon?
-1. Statisches Typ-System
-2. Keine Nebenwirkungen
-3. Funktionen höherer Ordnung
-4. Functors, Applicative und Monads
+--  - Statisches Typ-System
+--  - Keine Nebenwirkungen
+--  - Funktionen höherer Ordnung
+--  - Functors, Applicative und Monads
 
 -- 1.2 Pattern and Time
 
