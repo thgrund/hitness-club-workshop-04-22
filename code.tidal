@@ -20,13 +20,13 @@
 
 -- Ist eingebettet in der Sprache Haskell https://www.haskell.org/
 
--- 1.1 Warum Haskell und wie profitiert TidalCycles davon?
+-- 1.3 Warum Haskell und wie profitiert TidalCycles davon?
 --  - Statisches Typ-System
 --  - Keine Nebenwirkungen
 --  - Funktionen höherer Ordnung
 --  - Functors, Applicative und Monads
 
--- 1.2 Pattern and Time
+-- 1.4 Pattern and Time
 
 -- # Quellen von Sounds
 
@@ -44,6 +44,8 @@
 ## parallel composition: stack, ","
 ## cat and speed-up: fastcat "[ .. ]"
 ## time-shift  ~>
+## Mini Notation
+-- https://tidalcycles.org/docs/patternlib/tutorials/mini_notation/
 
 # Nearly all above
 
