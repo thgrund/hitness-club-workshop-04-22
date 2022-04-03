@@ -15,8 +15,8 @@ https://github.com/musikinformatik/SuperDirt
 
 is embedded in the Haskell language https://www.haskell.org/
 
--- 1.1 Why Haskell and what does TidalCycles benefit from?
-1. Static type system
+-- 1.1 Warum Haskell und wie profitiert TidalCycles davon?
+1. Statisches Typ-System
 2. No side effects
 3. Higher order functions
 4. Functors, Applicative, Monads
