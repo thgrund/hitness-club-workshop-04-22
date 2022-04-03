@@ -17,9 +17,9 @@ is embedded in the Haskell language https://www.haskell.org/
 
 -- 1.1 Warum Haskell und wie profitiert TidalCycles davon?
 1. Statisches Typ-System
-2. No side effects
-3. Higher order functions
-4. Functors, Applicative, Monads
+2. Keine Nebenwirkungen
+3. Funktionen höherer Ordnung
+4. Functors, Applicative und Monads
 
 -- 1.2 Pattern and Time
 
