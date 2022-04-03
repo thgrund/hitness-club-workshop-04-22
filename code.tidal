@@ -1,19 +1,19 @@
 -- Intro
 
-Tidal https://tidalcycles.org/  make patterns with code
+Tidal https://tidalcycles.org/ Patterns mit Code. 
 
 Sprache zur Beschreibung von Sequenzen
 (Bspw. polyphon, polyrhythmisch, generativ -> hä?! genau :-D).
 
 Umfassende Bibliothek ... zum transformieren und kombinieren der Sequenzen.
 
-quickly create complex patterns from simple ingredients.
+Erzeugt schnell komplexe Muster mit einfachen Zutaten
 
 does not make sound itself, uses
 https://supercollider.github.io/
 https://github.com/musikinformatik/SuperDirt
 
-is embedded in the Haskell language https://www.haskell.org/
+Ist eingebettet in der Sprache Haskell https://www.haskell.org/
 
 -- 1.1 Warum Haskell und wie profitiert TidalCycles davon?
 1. Statisches Typ-System
