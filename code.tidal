@@ -1,8 +1,157 @@
-Hallo Welt
+# intro
 
-Wie geht es dir?
+Tidal https://tidalcycles.org/  make patterns with code
 
-oh du schnöde
+language for describing
+(e.g., polyphonic, polyrhythmic, generative) sequences.
+
+extensive library ... for transforming and combining them.
+
+quickly create complex patterns from simple ingredients.
+
+does not make sound itself, uses
+https://supercollider.github.io/
+https://github.com/musikinformatik/SuperDirt
+
+is embedded in the Haskell language https://www.haskell.org/
+
+## Why Haskell and what does TidalCycles benefit from?
+
+1. Static type system
+2. No side effects
+3. Higher order functions
+4. Functors, Applicative, Monads
+
+## Pattern and Time
+
+abcabcabc...
+
+repeat  abc
+
+Pattern  === time -> [event]
+
+-- Time as Arc and Rational
+type Time = Rational
+
+# sources of sound
+
+## synthesizers
+
+s "superpiano" >| n "0"
+
+d1 $ s "superpiano" >| n "0"
+
+d1 $ s "superpiano" >| n "c"
+
+## samples
+
+d1 $ s "numbers" >| n "0"
+
+s "numbers" >| n "0" # speed 1
+
+d1 $ s "numbers" >| n "0" # speed rand
+
+-- Why does speed rand work?
+-- Answer: higher order functions!
+
+## effects
+
+d1 $ s "numbers" >| n "0" # speed rand # pan rand
+  # delay 1 # delayfb 0.8 # delayt (1/3)
+
+# patterns
+
+## concatenation (naive)
+
+d1 $ s "superpiano" >| n "<c d e>"
+
+d2 $ s "superpiano" >| n "<c d e>"
+  # delay 1 # delayfb 0.8 # delayt (1/3)
 
 
-bubu lala
+## speed up, speed down:
+
+s "superpiano" >| n "<c d e>"
+
+## combine two patterns
+
+d2 $ s "<superpiano superhammond>" >| n "<c d e>"
+
+-- values from left (<), right (>), combined (+), (*)
+
+d2 $ s "superpiano" >| n ( "<c d>" |+| "<5 7>" )
+
+## insertion: some haskell magic
+
+-- This works because a Pattern is a functor instance
+n $ fmap (+3) ("1 2 3 4")
+
+n $ (+3) <$> ("1 2 3 4")
+
+-- This works because a Pattern is an applicative instance
+n $ (+) <$> "1 2 3" <*> "4 5 6"
+
+n "1 2 3" |+ n "4 5 6"
+
+n $ (+) <$> "1 [2 3] 4" <*> "1 2"
+
+## functions that produce and modify patterns: run, slow, rev
+
+d1 $ s "superpiano" >| n (run 6)
+
+d1 $ s "superpiano" >| n (slow 6 $ run 6)
+
+d1 $ s "superpiano"
+  >| n (scale "major" $ run 6)
+
+-- where do we put the rev?
+
+d1 $ rev $ s "superpiano" # n ("[1 2 3]") |+| n ("[1 2 3]")
+
+## parallel composition: stack, ","
+
+d1 $ s "superpiano" >| n (stack ["<c3 g3 a3>", "<e f>" ])
+
+d1 $ s "superpiano" >| n "<c3 g3 a3, e f>"
+
+## cat and speed-up: fastcat "[ .. ]"
+
+d1 $ s "superpiano" >| n "<c3 g3 a3>"
+
+d1 $ fast 3 $ s "superpiano" >| n "<c3 g3 a3>"
+
+d1 $ s "superpiano" >| n "[c3 g3 a3]"
+
+d1 $ s "superpiano" >| n "[c3 g3 a3, e f]"
+
+## time-shift  ~>
+
+d1 $ s "superpiano" >| n ( "<0 0.75>" ~> "[1 3 5 8]" )
+
+s "superpiano" >| n ("0.75" ~> "[1 3 5 8]" )
+
+d1 $ s "superpiano" >| n ( "<0 0.75 0.5>" ~> "[1 3 5 8]" )
+
+# Nearly all above
+
+d1 $ s "superpiano" >| n ( "<0 0.75>" ~> "<<c c g4> <e c ~ >>" )
+    # delay 1 # delayfb 0.5 # delayt (1/3)
+
+d2 $ s "superpiano" >| n ( "<0.5 0>" ~>  (scale "major" $ slow 6 $ rev $ run 6) )
+   # delay 1 # delayfb 0.5 # delayt (1/3)
+
+d3 $ s "supersquare" >| n ( "c [c6 f] ~ [~ g]" ) # gain 0.8
+
+d4 $ s "[bd 808cy 808cy bd]*2" # lpf 5000
+
+d5 $ s "supersaw" >| n "<c3*2 c3>"
+
+# references:
+
+* https://tidalcycles.org/index.php/All_effects_and_synths
+* https://github.com/musikinformatik/SuperDirt
+* https://github.com/tidalcycles/Dirt-Samples
+
+* https://tidalcycles.org/index.php/Tutorial
+* https://www.imn.htwk-leipzig.de/~waldmann/etc/untutorial/tc/types/
+* https://tidalcycles.org/index.php/Mini_notation_syntax
