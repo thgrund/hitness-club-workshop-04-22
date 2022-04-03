@@ -9,7 +9,7 @@ Umfassende Bibliothek ... zum Transformieren und Kombinieren der Sequenzen.
 
 Erzeugt schnell komplexe Patterns mit einfachen Zutaten
 
-does not make sound itself, uses
+Kann keine Töne von sich aus erzeugen, verwendet:
 https://supercollider.github.io/
 https://github.com/musikinformatik/SuperDirt
 
