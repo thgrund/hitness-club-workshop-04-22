@@ -166,4 +166,5 @@ d1 $ jux (rev) $ spread ($) [slow "2", fast "2"]
 
 -- References
 -- https://tidalcycles.org/docs
--- https://club.tidalcycles.org 
+-- https://club.tidalcycles.org
+-- https://tidalcycles.org/docs/community
