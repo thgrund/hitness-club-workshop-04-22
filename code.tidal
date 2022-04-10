@@ -64,3 +64,25 @@ d1 $ n "c4 a f4 e"
 d1 $ s "808"
    # delaytime 0.4 # delayfeedback 0.2
    # delay 1
+
+
+-- 3 Patterns
+
+-- Concatenation
+-- Shorthand for |>
+d1 $ s "808" # n "0 1 2 3"
+
+-- Take the rhytmically structure from the right
+d1 $ s "808" >| n "0 1 2 3"
+
+-- Take the rhytmically structure from the left
+d1 $ s "808" |> n "0 1 2 3"
+
+d1 $ s "808*2" <| n "0 1 2 3"
+
+-- Speed up, speed down
+d1 $ s "808*4" # speed "0.5"
+
+d1 $ s "808" # speed "2.0"
+
+d1 $ s "numbers" # speed "-0.5"
