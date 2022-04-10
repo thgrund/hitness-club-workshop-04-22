@@ -162,4 +162,8 @@ d1 $ jux (rev) $ spread ($) [slow "2", fast "2"]
 
 :t fast 2 $ s "808"
 
-:t d1 $ fast 2 $ s "808" 
+:t d1 $ fast 2 $ s "808"
+
+-- References
+-- https://tidalcycles.org/docs
+-- https://club.tidalcycles.org 
