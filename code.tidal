@@ -21,3 +21,9 @@
 -- Is embedded in the Haskell language https://www.haskell.org/
 -- There are other (new) approaches like i.e. Strudel https://strudel.tidalcycles.org/tutorial/
 -- For collaboration: https://estuary.mcmaster.ca
+
+-- 1.3. Install tidalcycles
+-- At the end we should have
+-- The sound enginge (SuperCollider + SuperDirt)
+-- TidalCycles + haskell
+-- And an editor with tidalcycles (like atom)
