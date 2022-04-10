@@ -126,7 +126,7 @@ d1 $ n "[0 1 2 3]" # s "<808 superpiano>"
 d1 $ fast "<1 2>" $ slow "<2 1>"
    $ n "<[0 1 2 3] [5 4 3 2]>" # s "<superpiano>"
 
-d1 $ layer [slow "2", fast "2"] 
+d1 $ spread ($) [slow "2", fast "2"] 
    $ n "<[0 1 2 3] [5 4 3 2]>" # s "<superpiano>"
 
 d1 $ n "<0 5>" # s "<superpiano>"
