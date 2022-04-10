@@ -29,3 +29,13 @@
 -- And an editor with tidalcycles (like atom)
 --
 -- Ansible method: https://club.tidalcycles.org/t/install-manage-upgrades-to-tidal-environment-with-a-single-command-on-ubuntu-debian-linux-mint-ansible-method/544
+
+-- 1.4. Pattern and Time
+-- Pattern
+-- Time -> [Events]
+
+-- 2. Sources of Sounds
+-- 2.1 Samples
+-- https://github.com/tidalcycles/Dirt-Samples
+
+d1 $ s "bd sn"
