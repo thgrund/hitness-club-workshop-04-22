@@ -37,6 +37,7 @@
 -- 2. Sources of Sounds
 -- 2.1 Samples
 -- https://github.com/tidalcycles/Dirt-Samples
+-- https://tidalcycles.org/docs/configuration/Audio%20Samples/default_library/#default-samples-table
 
 d1 $ n "0 1 2*2 3" # s "808"
 
