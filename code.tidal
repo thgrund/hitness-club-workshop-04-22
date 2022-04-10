@@ -124,3 +124,5 @@ d1 $ n "0 1 2 3" # s "808"
 d1 $ n "[0 1 2 3]" # s "<808 superpiano>"
 
 d1 $ n "<[0 1 2 3] [5 4 3 2]>" # s "<superpiano>"
+
+d1 $ n "<0 5>" # s "<superpiano>"
