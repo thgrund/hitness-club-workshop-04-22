@@ -49,3 +49,4 @@ d1 $ n "0" # s "superpiano"
 d1 $ n "c4 a f4 e" # s "supersaw"
 
 -- 2.3 MIDI
+-- https://tidalcycles.org/docs/configuration/MIDIOSC/midi/
