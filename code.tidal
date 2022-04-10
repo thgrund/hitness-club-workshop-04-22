@@ -96,6 +96,14 @@ d1 $ s "808*4" # speed "0.5"
 
 d1 $ s "808" # speed "2.0"
 
+d1 $ s "numbers" # speed rand
+
+d1 $ s "numbers" # speed (rand + 1)
+
+d1 $ s "808" # speed (rand - 1)
+
+d1 $ s "808" # speed (rand + "<1 2>") 
+
 d1 $ s "numbers" # speed "-0.5"
 
 -- slow down and speed up
