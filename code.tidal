@@ -81,6 +81,8 @@ n "0 1 2" # s "808"
 -- Shorthand for |>
 d1 $ s "808" # n "0 1 2 3"
 
+d2 $ s "bd hh sn ht"
+
 -- Take the rhytmically structure from the right
 d1 $ s "808" >| n "0 1 2 3"
 
@@ -95,3 +97,14 @@ d1 $ s "808*4" # speed "0.5"
 d1 $ s "808" # speed "2.0"
 
 d1 $ s "numbers" # speed "-0.5"
+
+-- slow down and speed up
+d1 $ slow 2 $ n "0 1 2 3" # s "808"
+
+d1 $ slow 1 $ n "0 1 2 3" # s "808"
+
+d1 $ slow 0.5 $ n "0 1 2 3" # s "808"
+
+slow 0.5 $ n "0 1 2 3" # s "808"
+
+d1 $ fast 1 $ n "0 1 2 3" # s "808"
