@@ -56,3 +56,7 @@ d1 $ n "c4 a f4 e" # s "supersaw"
 d1 $ n "c4 a f4 e" # s "supersaw" # lpf 300
 
 d1 $ n "c4 a f4 e" # s "supersaw" # hpf 1000
+
+-- global effects
+d1 $ n "c4 a f4 e"
+   # s "supersaw" # room 1 # sz 0.9 # gain 0.9 
