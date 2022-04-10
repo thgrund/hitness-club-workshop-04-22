@@ -69,6 +69,14 @@ d1 $ s "808"
 
 -- 3 Patterns
 
+s "808"
+
+n "0" # s "808"
+
+n "0 1" # s "808"
+
+n "0 1 2" # s "808"
+
 -- Concatenation
 -- Shorthand for |>
 d1 $ s "808" # n "0 1 2 3"
