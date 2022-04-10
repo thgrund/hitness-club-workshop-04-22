@@ -77,6 +77,10 @@ n "0 1" # s "808"
 
 n "0 1 2" # s "808"
 
+-- Add your own sample folders like:
+-- 		~dirt.loadSoundFiles("/Users/tgrund/Music/Ableton/Samples/*");
+
+
 -- Concatenation
 -- Shorthand for |>
 d1 $ s "808" # n "0 1 2 3"
@@ -102,7 +106,7 @@ d1 $ s "numbers" # speed (rand + 1)
 
 d1 $ s "808" # speed (rand - 1)
 
-d1 $ s "808" # speed (rand + "<1 2 -1>") 
+d1 $ s "808" # speed (rand + "<1 2 -1>")
 
 d1 $ s "numbers" # speed "-0.5"
 
