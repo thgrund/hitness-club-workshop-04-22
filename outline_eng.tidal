@@ -1,0 +1,57 @@
+-- Intro
+
+-- 1.1 Computer music, live coding, TopLap and Algorave
+-- TopLap https://toplap.org
+-- Algorave https://www.youtube.com/watch?v=S2EZqikCIfY
+-- Eulerroom https://www.youtube.com/c/Eulerroom
+
+-- 1.2 TidalCycles
+--
+-- Tidal https://tidalcycles.org/  make patterns with code
+--
+-- Language for describing
+-- (e.g., polyphonic, polyrhythmic, generative) sequences.
+--
+-- Extensive library ... for transforming and combining them.
+--
+-- Quickly create complex patterns from simple ingredients.
+--
+-- Does not make sound itself, uses
+-- https://supercollider.github.io/
+-- https://github.com/musikinformatik/SuperDirt
+--
+-- Is embedded in the Haskell language https://www.haskell.org/
+-- There are other (new) approaches like i.e. Strudel https://strudel.tidalcycles.org/tutorial/
+
+-- ## Why Haskell and what does TidalCycles benefit from?
+--
+-- 1. Static type system
+-- 2. No side effects
+-- 3. Higher order functions
+-- 4. Functors, Applicative, Monads
+
+-- 1.4 Pattern and time
+
+-- 2. Sources of sound
+-- 2.1 Synthesizers
+-- 2.2 Samples
+-- 2.3 Midi
+-- 2.4 Effects (local and global)
+
+-- 3 Patterns
+-- 3.1 Concatenation (naive)
+-- 3.2 Speed up, speed down:
+-- 3.3 Combine two patterns
+-- 3.4 Functions that produce and modify patterns: run, slow, rev
+-- 3.5 Parallel composition: stack, ","
+-- 3.6 Cat and speed-up: fastcat "[ .. ]"
+-- 3.7 Time-shift  ~>
+-- 3.8 Mini Notation
+-- https://tidalcycles.org/docs/patternlib/tutorials/mini_notation/
+-- 3.9 Euclid, polymetric und polyrhyhtmic
+
+-- # References:
+-- * https://tidalcycles.org/docs/
+-- * https://github.com/musikinformatik/SuperDirt
+-- * https://github.com/tidalcycles/Dirt-Samples
+-- * https://www.imn.htwk-leipzig.de/~waldmann/etc/untutorial/tc/types/
