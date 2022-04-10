@@ -81,6 +81,8 @@ n "0 1 2" # s "808"
 -- ~dirt.loadSoundFiles("/Users/tgrund/Music/Ableton/Samples/*");
 -- i.e. https://github.com/thgrund/samples-ukulele
 
+d1 $ s "sally" <| note "c a*2 ~ e"
+
 -- Concatenation
 -- Shorthand for |>
 d1 $ s "808" # n "0 1 2 3"
