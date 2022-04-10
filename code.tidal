@@ -148,6 +148,11 @@ d1 $ fast 2 $ n "0" # s "<superpiano>"
 d1 ( fast 2 $ n "0" # s "<superpiano>")
 d1 ( fast 2 ( n "0" # s "<superpiano>"))
 
+( stm ( stm1 $ stm2 ) )
+
+( stm ( stm1 ( stm2 ) ) )
+
+
 d1 $ n "<0 5>" # s "<superpiano>"
 
 d1 $ jux (rev) $ spread ($) [slow "2", fast "2"]
