@@ -38,4 +38,9 @@
 -- 2.1 Samples
 -- https://github.com/tidalcycles/Dirt-Samples
 
-d1 $ s "bd sn"
+d1 $ n "0 1 2*2 3" # s "808"
+
+-- 2.2 Synthesizers
+d1 $ n "0 1 2 3" # s "superpiano"
+
+d1 $ n "0 1 2 3" # s "superpiano"
