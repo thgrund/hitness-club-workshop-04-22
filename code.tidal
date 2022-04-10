@@ -78,7 +78,7 @@ n "0 1" # s "808"
 n "0 1 2" # s "808"
 
 -- Add your own sample folders like:
--- 		~dirt.loadSoundFiles("/Users/tgrund/Music/Ableton/Samples/*");
+-- ~dirt.loadSoundFiles("/Users/tgrund/Music/Ableton/Samples/*");
 
 
 -- Concatenation
