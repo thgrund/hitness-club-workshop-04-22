@@ -52,6 +52,7 @@ d1 $ n "c4 a f4 e" # s "supersaw"
 -- https://tidalcycles.org/docs/configuration/MIDIOSC/midi/
 
 -- 2.4 Effects
+-- local effects
 d1 $ n "c4 a f4 e" # s "supersaw" # lpf 300
 
 d1 $ n "c4 a f4 e" # s "supersaw" # hpf 1000
